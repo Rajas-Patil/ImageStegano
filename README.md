@@ -20,15 +20,15 @@ Military‑grade image steganography with AES‑256‑GCM encryption and an eleg
 
 ## 🧠 How It Works (Overview)
 
-### 1) Crypto Layer (AES‑GCM)
+### 1) Crypto Layer (AES-GCM)
 
 ```mermaid
 flowchart LR
-  A[(Plain Data)] --> B[Generate 96‑bit Nonce]
-  B --> C[Encrypt with AES‑256‑GCM]
-  C --> D{Ciphertext + Tag}
-  E[Metadata (version, timestamp, key_hash, size)] --> C
-  D --> F[Bundle = base64(nonce, aad, ct, tag)]
+  A[Plain data] --> B[Generate 96-bit nonce]
+  B --> C[AES-256-GCM encrypt]
+  C --> D[Ciphertext and tag]
+  E[Metadata version timestamp key_hash size] --> C
+  D --> F[Bundle base64 nonce aad ct tag]
 ```
 
 - Authenticated encryption ensures confidentiality and tamper detection.
@@ -38,10 +38,10 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-  I[Cover Image (RGB/RGBA)] --> J[Capacity Calc]
-  J --> K{Enough Space?}
-  K -- no --> X[Abort]
-  K -- yes --> L[Prepare (strip metadata, ensure RGB)]
+  I[Cover image RGB or RGBA] --> J[Capacity calc]
+  J -->|enough| K[Prepare image]
+  J -->|not enough| X[Abort]
+  K --> L[Strip metadata ensure RGB]
   L --> M[Embed bits into pixel LSBs]
   M --> N[Save as PNG]
 ```
@@ -63,12 +63,12 @@ SecureStego uses an overhead of 200 bytes for safety.
 
 ```mermaid
 sequenceDiagram
-  participant P as Pixel Channel (8 bits)
-  participant B as Payload Bit
+  participant P as Pixel channel (8 bits)
+  participant B as Payload bit
   participant R as Result
-  P->>R: 1011001<b>0</b>
-  B->>R: replace last bit → 1011001<b>1</b>
-  Note over R: Only the last bit changes; human eye can’t see it.
+  P->>R: 10110010
+  B->>R: replace last bit -> 10110011
+  Note over R: Only the last bit changes; visually indistinguishable.
 ```
 
 ---
