@@ -66,9 +66,9 @@ sequenceDiagram
   participant P as Pixel channel (8 bits)
   participant B as Payload bit
   participant R as Result
-  P->>R: 10110010
-  B->>R: replace last bit -> 10110011
-  Note over R: Only the last bit changes; visually indistinguishable.
+  P->>R: before = 10110010
+  B->>R: set least significant bit to 1; after = 10110011
+  Note over R: Only the last bit changes; image looks the same.
 ```
 
 ---
@@ -172,7 +172,7 @@ streamlit run app.py
 
 ## 📜 License
 
-MIT © 2025 SecureStego contributors
+Rajas Patil © 2025 SecureStego contributors
 
 ---
 
