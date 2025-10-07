@@ -62,14 +62,14 @@ SecureStego uses an overhead of 200 bytes for safety.
 ## 🖼️ Visual Intuition – LSB Steganography
 
 ```mermaid
-sequenceDiagram
-  participant P as Pixel channel (8 bits)
-  participant B as Payload bit
-  participant R as Result
-  P->>R: before = 10110010
-  B->>R: set least significant bit to 1; after = 10110011
-  Note over R: Only the last bit changes; image looks the same.
+flowchart LR
+  A[Pixel bits: 10110010]
+  B[Payload bit: 1]
+  A -- set LSB to payload --> C[Result bits: 10110011]
+  B --> C
 ```
+
+Only the least significant bit changes, so the pixel color change is imperceptible.
 
 ---
 
