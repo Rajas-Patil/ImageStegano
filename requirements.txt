@@ -1,7 +1,6 @@
 streamlit==1.39.0
 cryptography==42.0.0
-Pillow
-
+Pillow==10.3.0
 stegano==0.11.3
 plotly==5.18.0
 pandas==2.2.0
