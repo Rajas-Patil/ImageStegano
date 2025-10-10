@@ -1,0 +1,62 @@
+[
+  {
+    "timestamp": "2025-10-10T05:34:27.876692",
+    "type": "hide",
+    "details": {
+      "cover_image": "Gemini_Generated_Image_fu95llfu95llfu95.png",
+      "payload_bytes": 15,
+      "payload_kb": 0.0146484375,
+      "capacity_used": 0.11893087403759885,
+      "output_file": "stego_Gemini_Generated_Image_fu95llfu95llfu95_20251010_110423.png"
+    }
+  },
+  {
+    "timestamp": "2025-10-10T05:35:02.260176",
+    "type": "reveal",
+    "details": {
+      "stego_image": "stego_Gemini_Generated_Image_fu95llfu95llfu95_20251010_110423.png",
+      "data_size_bytes": 15,
+      "data_size_kb": 0.0146484375
+    }
+  },
+  {
+    "timestamp": "2025-10-10T05:44:28.316315",
+    "type": "hide",
+    "details": {
+      "cover_image": "stego_ChatGPT Image Mar 29, 2025, 12_23_37 PM_20251007_193536.png",
+      "payload_bytes": 154260,
+      "payload_kb": 150.64453125,
+      "capacity_used": 46.600545432343324,
+      "output_file": "stego_stego_ChatGPT Image Mar 29, 2025, 12_23_37 PM_20251007_193536_20251010_111419.png"
+    }
+  },
+  {
+    "timestamp": "2025-10-10T05:44:56.367834",
+    "type": "reveal",
+    "details": {
+      "stego_image": "stego_stego_ChatGPT Image Mar 29, 2025, 12_23_37 PM_20251007_193536_20251010_111419.png",
+      "data_size_bytes": 154260,
+      "data_size_kb": 150.64453125
+    }
+  },
+  {
+    "timestamp": "2025-10-10T08:34:36.585790",
+    "type": "hide",
+    "details": {
+      "cover_image": "stego_ChatGPT Image Mar 29, 2025, 12_23_37 PM_20251007_193536.png",
+      "payload_bytes": 154260,
+      "payload_kb": 150.64453125,
+      "capacity_used": 46.600545432343324,
+      "output_file": "stego_stego_ChatGPT Image Mar 29, 2025, 12_23_37 PM_20251007_193536_20251010_140427.png"
+    }
+  },
+  {
+    "timestamp": "2025-10-10T08:35:28.241465",
+    "type": "reveal",
+    "details": {
+      "stego_image": "stego_stego_ChatGPT Image Mar 29, 2025, 12_23_37 PM_20251007_193536_20251010_140427.png",
+      "data_size_bytes": 154260,
+      "data_size_kb": 150.64453125
+    }
+  }
+]
