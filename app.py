@@ -9,9 +9,9 @@ import base64
 
 # Page config
 st.set_page_config(
-    page_title="SecureStego - Secure Image Steganography",
+    page_title="ImageStegano",
     page_icon="🔐",
-    layout="wide",
+    layout="wide",  
     initial_sidebar_state="expanded"
 )
 
@@ -33,8 +33,8 @@ if 'initialized' not in st.session_state:
 # Header
 st.markdown("""
 <div class="stego-header">
-    <h1>🔐 SecureStego</h1>
-    <p>Military-Grade Image Steganography Platform</p>
+    <h1>🔐ImageStegano</h1>
+    
 </div>
 """, unsafe_allow_html=True)
 
@@ -188,7 +188,8 @@ with nav_col4:
 st.markdown("---")
 st.markdown("""
 <div style='text-align: center; color: #94a3b8; padding: 2rem 0;'>
-    <p><strong>SecureStego v2.0</strong> | Enterprise Steganography Platform</p>
-    <p>Powered by AES-256-GCM + LSB Algorithm | © 2025</p>
+    <p><strong>ImageStegano</strong>  </p>
+    <p> |
+    ] AES-256-GCM + LSB Algorithm |</p>
 </div>
 """, unsafe_allow_html=True)
